@@ -3,8 +3,8 @@
 With a single-value `$GOPATH`, e.g. `/path/to/gopath`:
 
 ```sh
-$ go version
-go version go1.6 linux/amd64
+$ cd `mktemp -d /tmp/go-test-repo-XXXXX`
+$ export GOPATH=$PWD
 $ go get github.com/myitcv/go-vendoring/{cmd/a,mylib1,mylib2}   # ok
 $ $GOPATH/bin/a
 07cbb7e2-8975-44a9-9937-92d9dddae612                            # a uuid is output
