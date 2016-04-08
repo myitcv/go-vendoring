@@ -14,7 +14,6 @@ $ go test ./...                                                 # ok
 ?       github.com/myitcv/go-vendoring/mylib1   [no test files]
 ?       github.com/myitcv/go-vendoring/mylib2   [no test files]
 $ export GOPATH=$PWD/_vendor:$GOPATH
-$ go test ./...                                                 # fails
 $ go test ./...
 panic: runtime error: slice bounds out of range
 
